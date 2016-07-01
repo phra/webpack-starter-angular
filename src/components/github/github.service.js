@@ -13,7 +13,7 @@ class GithubService {
     }).success(function(data) {
       // this callback will be called asynchronously
       // when the response is available
-      return data.data.toJSON();
+      return JSON.stringify(data.data);
     }).
     error(function(data, status) {
       // called asynchronously if an error occurs
