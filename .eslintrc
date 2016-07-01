@@ -1,6 +1,5 @@
 {
   "plugins": [angular],
-  "extends": angular,
   "rules": {
     "indent": [
       2,
@@ -43,5 +42,8 @@
     "afterEach"  : false,
     "inject"     : false
   },
-  "extends": "eslint:recommended"
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "sourceType": "module"
+  }
 }
